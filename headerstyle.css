@@ -1,0 +1,195 @@
+  body{
+font-family: 'Poppins', sans-serif;;
+  }
+  
+  header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 1000;
+      background-color: white;
+      padding: 10px 20px;
+      border-bottom: 1px solid #ddd;
+    }
+
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    #header-logo {
+      height: 60px;
+    }
+
+    .nav-links {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+    }
+
+    .nav-links li {
+      position: relative;
+    }
+
+    .nav-links a,
+    .nav-links span {
+      text-decoration: none;
+      color: black;
+      padding: 10px 15px;
+      display: block;
+      cursor: pointer;
+    }
+
+    .nav-links a:hover,
+    .nav-links span:hover {
+      background-color: orangered;
+      color: white;
+      border-radius: 4px;
+    }
+
+    .dropdown,
+    .dropdown-sub {
+      display: none;
+      position: absolute;
+      background-color: gainsboro;
+      list-style: none;
+      min-width: 200px;
+      border-radius: 4px;
+      top: 100%;
+      left: 0;
+    }
+
+    .dropdown-sub {
+      top: 0;
+      left: 100%;
+    }
+
+    .dropdown-parent:hover > .dropdown,
+    .dropdown-sub-parent:hover > .dropdown-sub {
+      display: block;
+    }
+
+    /* Hamburger styles */
+    .hamburger {
+      display: none;
+      flex-direction: column;
+      cursor: pointer;
+    }
+
+    .hamburger div {
+      width: 25px;
+      height: 3px;
+      background-color: black;
+      margin: 4px 0;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .hamburger {
+        display: flex;
+      }
+
+      .nav-links {
+        flex-direction: column;
+        width: 100%;
+        display: none;
+      }
+
+      .nav-links.active {
+        display: flex;
+      }
+
+      .nav-links li {
+        width: 100%;
+      }
+
+      .dropdown,
+      .dropdown-sub {
+        position: static;
+        min-width: 100%;
+        box-shadow: none;
+      }
+
+      .dropdown-parent:hover > .dropdown,
+      .dropdown-sub-parent:hover > .dropdown-sub {
+        display: block;
+      }
+
+      .dropdown li,
+      .dropdown-sub li {
+        padding-left: 20px;
+      }
+    }
+
+
+    /* Extra small devices (phones, less than 480px) */
+@media (max-width: 479px) {
+ 
+  
+}
+
+/* Small devices (phones, 480px to 767px) */
+@media (min-width: 480px) and (max-width: 767px) {
+
+
+  .strengths-container {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;       
+  gap: 40px;
+  padding: 40px;
+  background-color:white;
+  font-family: 'Poppins', sans-serif;
+}
+
+
+.dental-img{
+    background-size: cover;
+      background-position: center;
+}
+
+.doctor-img{
+    background-size: cover;
+      background-position: center;
+}
+
+*{
+  font-size: small;
+}
+
+#ourservices{
+  display: flex;
+  flex-direction: column;
+}
+
+#cust-feed p{
+  display: flex;
+  flex-direction: column;
+}
+  
+}
+
+/* Medium devices (tablets, 768px to 991px) */
+@media (min-width: 768px) and (max-width: 991px) {
+  
+  
+}
+
+/* Large devices (small laptops, 992px to 1199px) */
+@media (min-width: 992px) and (max-width: 1199px) {
+  
+}
+
+/* Extra large devices (desktops, 1200px and up) */
+@media (min-width: 1200px) {
+
+  
+}
