@@ -824,7 +824,7 @@ h1{
 
 /* Section wrapper */
 .topics {
-  margin: 100px auto 40px; /* top: 100px, left/right auto, bottom: 40px */
+ margin: 0 auto 40px; 
   max-width: 1100px;
   padding: 20px;
   display: flex;
@@ -903,7 +903,7 @@ h1{
   gap: 20px;
   padding: 40px 20px;
   max-width: 1200px;
- margin: 100px auto 40px; 
+ margin: 0 auto 40px;
 }
 
 .explore-card {
@@ -934,7 +934,7 @@ h1{
 
 .blog-container {
   max-width: 1200px;
-  margin: 100px auto 40px;
+  margin: 0 auto 40px;
   padding: 0 20px;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
@@ -991,7 +991,7 @@ h1{
 /*---------------about--------------------*/
  .container {
       max-width: 1100px;
-      margin: 100px auto 40px;
+      margin: 0 auto 40px;
       padding: 40px 20px;
       font-family: 'Poppins',sans-serif;
       line-height: 1.6;
@@ -1057,6 +1057,8 @@ h1{
       }
     }
 
+    
+
 
 
 
@@ -1065,9 +1067,7 @@ h1{
    /* Extra small devices (phones, less than 480px) */
 @media (max-width: 479px) {
 
-  body{
-    background-color: pink;
-  }
+
 
    .strengths-container {
   display: flex;
@@ -1147,7 +1147,7 @@ h1{
 #cust-feed p{
   display: flex;
   flex-direction: column;
-  width:auto;
+  width:60vw;
 }
 
 .slide{
@@ -1201,9 +1201,7 @@ main{
 /* Small devices (phones, 480px to 767px) */
 @media (min-width: 480px) and (max-width: 767px) {
 
-  body{
-    background-color: yellow;
-  }
+  
 
 
   .strengths-container {
@@ -1239,7 +1237,7 @@ main{
 #cust-feed p{
   display: flex;
   flex-direction: column;
-  width:auto;
+  width:40vw;
     border-radius: 0%;
 }
 
