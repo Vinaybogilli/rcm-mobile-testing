@@ -174,7 +174,33 @@ font-family: 'Poppins', sans-serif;;
   display: flex;
   flex-direction: column;
 }
+
+.slide{
+  height:40vh;
+}
+
+#header-logo{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-items: center;
+}
+
+#cust-feed {
+  display: flex;
+  flex-direction:column;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  align-items: center;
   
+}
+
+#cust-feed p{
+    width:40vw;
+}
+
+
 }
 
 /* Medium devices (tablets, 768px to 991px) */
